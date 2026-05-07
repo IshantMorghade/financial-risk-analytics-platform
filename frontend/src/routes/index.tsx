@@ -1,3 +1,4 @@
+import MainLayout from "../layouts/MainLayout";
 import DashboardPage from "../pages/DashboardPage";
 import DataUploadPage from "../pages/DataUploadPage";
 import LandingPage from "../pages/LandingPage";
@@ -20,19 +21,24 @@ export const routes = [
     element: <RegisterPage />,
   },
   {
-    path: "/dashboard",
-    element: <DashboardPage />,
-  },
-  {
-    path: "/data",
-    element: <DataUploadPage />,
-  },
-  {
-    path: "/admin",
-    element: <AdminPage />,
-  },
-  {
-    path: "/compare",
-    element: <ComparePage />,
+    element: <MainLayout />,
+    children: [
+      {
+        path: "/dashboard",
+        element: <DashboardPage />,
+      },
+      {
+        path: "/data",
+        element: <DataUploadPage />,
+      },
+      {
+        path: "/admin",
+        element: <AdminPage />,
+      },
+      {
+        path: "/compare",
+        element: <ComparePage />,
+      },
+    ],
   },
 ];
