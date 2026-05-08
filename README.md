@@ -1,73 +1,97 @@
-# React + TypeScript + Vite
+🚀 Overview
+Financial Risk Analytics Platform (branded as FinRisk Insight) is a full-stack FinTech web application designed to help users upload financial datasets, analyze portfolio risk, and visualize important risk indicators through an interactive dashboard.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The platform combines secure authentication, financial data ingestion, portfolio risk analytics, and modern dashboard visualization into one professional web system. It is designed to simulate the kind of internal analytics tooling used in financial institutions, wealth management teams, or risk monitoring environments.
 
-Currently, two official plugins are available:
+Why this project matters
+In real-world finance, understanding portfolio risk is essential for making informed decisions. This platform helps convert raw CSV-based market or portfolio data into meaningful insights such as:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Value at Risk (VaR)
 
-## React Compiler
+Volatility
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Maximum Drawdown
 
-## Expanding the ESLint configuration
+Risk Score
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Visual trend analysis
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Dataset-level monitoring and administration
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+This project demonstrates the intersection of:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Full-stack software engineering
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Secure authentication systems
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+REST API design
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Financial analytics logic
+
+Data visualization
+
+Role-based access control
+
+Production-style project structuring
+
+✨ Key Features
+🔐 Authentication & Authorization
+User registration and login
+
+JWT-based authentication
+
+Protected frontend and backend routes
+
+Role-based access control (Admin/User)
+
+Session-aware dashboard access
+
+📂 Data Upload & Management
+CSV dataset upload
+
+File handling using Multer
+
+CSV parsing and validation
+
+Dataset storage in MongoDB
+
+Dataset management workflows
+
+📈 Financial Analytics
+Value at Risk (VaR) calculation
+
+Volatility analysis
+
+Maximum drawdown tracking
+
+Risk score generation
+
+Portfolio risk interpretation
+
+📊 Dashboard & Visualization
+Interactive analytics dashboard
+
+Recharts-powered data visualization
+
+Responsive UI with Material UI
+
+Risk metric cards and charts
+
+Admin overview panels
+
+🛠️ Admin Capabilities
+Admin dashboard
+
+User management
+
+Dataset oversight
+
+Role-aware route protection
+
+System-level analytics visibility
+
+🧰 Tech Stack
+Frontend
+![alt text](image.png)
+Backend
+![alt text](image-1.png)
